@@ -42,19 +42,16 @@ He seeks accurate and reliable data from a trustworthy source. He wants to elimi
 
 💹 Data Model
 
+### Database Used - https://tinyurl.com/4hyfjatj
 
-Here is the Metadata used in the Project - https://github.com/saksham-mishra24/Revenue-Insights_Azure-data-Factory/tree/main/Metadata
+### Dataset -  https://tinyurl.com/yu8txn4r
 
-Here is the dataset used in the video - https://github.com/saksham-mishra24/Revenue-Insights_Azure-data-Factory/tree/main/RawData
+### Metadata -  https://tinyurl.com/yu8txn4r
 
-# 📊 Archieture
 
-![image](https://github.com/saksham-mishra24/Revenue-Insights_Azure-data-Factory/assets/120908587/7a7df8f1-00f0-4e44-ba7f-279c1583fc4e)
+# Data Model ![datamodel-sales](https://github.com/saksham-mishra24/Sales_Insights_Project_Codebasics/assets/120908587/266deec8-fc60-45d9-b871-e8b6fc84e5aa)
 
-# Data Model
 
-![image](https://github.com/saksham-mishra24/Revenue-Insights_Azure-data-Factory/assets/120908587/f2381075-420a-4239-866f-4a667ef8c939)
 
-# 📊 DashBoard 
-![image](https://github.com/saksham-mishra24/Revenue-Insights_Azure-data-Factory/assets/120908587/77fc01cd-f2d6-428b-ad99-c8c102166d6d)
+
 
