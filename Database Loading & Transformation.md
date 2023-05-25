@@ -90,13 +90,13 @@ In the Date table, there is a column named "product_type" that initially had the
 --IF USD THEN 80 MULTIPLY & CREATED NORM_SLAES_ANOUMT
 
 
-select product_code,customer_code,market_code,order_date,sales_qty,profit_margin_percentage,profit_margin,cost_price,cast(sales_amount as int) as sales_amount_new ,currency,
+select DISTINCT product_code,customer_code,market_code,order_date,sales_qty,profit_margin_percentage,profit_margin,cost_price,cast(sales_amount as int) as sales_amount_new ,currency,
 case when currency = 'USD' then CAST(sales_amount * 80 AS INT) else cast(sales_amount as int)  end as norm_sales_amount 
 from transactions
 
 --CREATED A FILTERED TABLE FOR FUTURE ANANYLISIS
 
-SELECT product_code, customer_code, market_code, order_date, sales_qty, profit_margin_percentage,
+SELECT DISTINCT product_code, customer_code, market_code, order_date, sales_qty, profit_margin_percentage,
        profit_margin, cost_price, CAST(sales_amount AS INT) AS sales_amount_new, currency,
        CASE WHEN currency = 'USD' THEN CAST(sales_amount * 80 AS INT) ELSE CAST(sales_amount AS INT) END AS norm_sales_amount
 INTO transactions_FILTERED
