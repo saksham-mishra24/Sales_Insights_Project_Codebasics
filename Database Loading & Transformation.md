@@ -1,10 +1,10 @@
 # This project consists of 5 tables, namely:
 
 ### 1. Customers 
-### Transacations
-### Products
-### Markets
-### Date
+### 2. Transacations
+### 3. Products
+### 4. Markets
+### 5. Date
 
 ## Foremost if u want to try to modify any table use this format it can help to undo your actions -
 ```sql
@@ -67,10 +67,6 @@ SELECT markets_code,markets_name,zone
 INTO Markets_filtered
 FROM markets
 where zone <> ' '
-
---CHECKED NEW FILTERED DATA 
-
-select * from Markets_filtered
 ```
 
 
@@ -84,7 +80,6 @@ WHERE product_type LIKE '%\r%'
 ```
 
 # :five: Transactions Table Modification
-In the Date table, there is a column named "product_type" that initially had the values like "Distribution\r ". It has been updated to "Distribution" columns like these using the following SQL statement:
 
 ```sql
 --IF USD THEN 80 MULTIPLY & CREATED NORM_SLAES_ANOUMT
@@ -101,10 +96,7 @@ SELECT DISTINCT product_code, customer_code, market_code, order_date, sales_qty,
        CASE WHEN currency = 'USD' THEN CAST(sales_amount * 80 AS INT) ELSE CAST(sales_amount AS INT) END AS norm_sales_amount
 INTO transactions_FILTERED
 FROM transactions
-
-
 ```
-duplicate colmns
 
 
 
